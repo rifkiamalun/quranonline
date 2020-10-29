@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maulid Diba</title>
+    <link rel="stylesheet" href="/diba/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="head-audio">
+        <audio id="myAudio">
+          <source src="diba/audio/maulidDiba.mp3" type="audio/ogg">
+          <source src="diba/audio/maulidDiba.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <button class="aduo" onclick="playAudio()" type="button"><i class="fa fa-play"></i></button>
+          <button class="aduo" onclick="pauseAudio()" type="button"><i class="fa fa-stop"></i></button>
+          <button id="cok" class="aduo"  type="button"><i class="fa fa-instagram"></i></button>
+         <button id="cok" class="aduo"  type="button"><i class="fa fa-facebook"></i></button>
+         <button id="cok" class="aduo" onclick="wa()" type="button"><i class="fa fa-whatsapp"></i></button>
+        </div>
+
+    <canvas id="pdf-render"></canvas>
+    <div class="top-bar">
+      <button class="btn" id="prev-page">
+        <i class="fa fa-step-backward"></i> Prev Page
+      </button>
+      <button class="btn" id="next-page">
+        Next Page <i class="fa fa-step-forward"></i>
+      </button>
+      <span class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </span>
+    </div>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="/diba/js/main.js"></script>
+    <script src="/diba/js/audi.js"></script>
+</body>
+</html>

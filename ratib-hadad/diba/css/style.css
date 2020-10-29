@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#pdf-render {
+  max-width:100%;
+  margin: 0 auto;
+  display: block;
+  height:  550px;
+
+}
+
+.img-head {
+    margin: 0 auto;
+    display: block;
+} 
+
+.head-audio {
+  background: black;
+  padding: 20px;
+}
+
+.controls {
+  width: 50%;
+}
+.aduo {
+  background: coral;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.top-bar {
+  background-color: #000000c9;
+  width: 100%;
+  color: wheat;
+  position: fixed;
+  top: 90%;
+  padding: 1rem;
+}
+
+.btn {
+  background: coral;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+}
+
+
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.page-info {
+  margin-left: 1rem;
+}
+
+#page-num #page-count {
+  text-align: center;
+}
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #pdf-render {
+    width:100%; 
+  }
+  .img-head {
+    width: 100%;
+  }
+  .page-info {
+    margin-left: 0rem;
+    font-size: 10px;
+  }
+  .top-bar {
+    width: 100%;
+    height: 100px;
+    top: 88%;
+  }
+}
